@@ -15,6 +15,7 @@ func main() {
 
  b.Respond("dog pile", b.DogPile)
  b.Respond("dog me", b.DogMe)
+ b.RespondRegex("roll\\s(\\d+)?d(\\d+)((\\+|\\-)\\d+)?", b.RollDieRegex)
 
  err := b.Run()
  if err != nil {
