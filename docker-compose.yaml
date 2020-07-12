@@ -1,0 +1,9 @@
+version: '2.4'
+services:
+  chad:
+    build:
+      context: .
+    container_name: chad-bot
+    image: chad-bot:latest
+    environment:
+      - CHAD_SLACK_TOKEN
